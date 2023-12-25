@@ -121,8 +121,8 @@ def custom_vnet(
     use_attention=False,
     filters=16,
     num_layers=4,
-    output_activation="sigmoid",
-):  # 'sigmoid' or 'softmax'
+    output_activation="linear", # regression task in the current case
+):  # might try relu also.
 
     """
     Customizable VNet architecture based on the work of
